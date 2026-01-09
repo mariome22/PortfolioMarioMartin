@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mario Martin — Portfolio</title>
+        <link rel="icon" type="image/png" href="img/Banner.jpg" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="w3-bar w3-black w3-padding w3-top w3-opacity-min nav-container">
+            <a href="img/CVMarioMartinEscribano.pdf" class="btn-cv" download>
+                DESCARGAR CV
+            </a>
+            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Inicio</a>
+            <a href="#info" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Presentación</a>
+            <a href="#games" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Histeria</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Otros proyectos</a>
+            <a href="#aptitudes" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Aptitudes</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Contacto</a>
+        </div>
+
+        <header id="home" class="hero-image">
+        <div class="hero-overlay"></div>
+        </header>
+
+        <section id="info" class="presentation-section">
+            <div class="w3-container">
+                <h2 class="section-title">PRESENTACIÓN</h2>
+                
+                <div class="presentation-container">
+                    <div class="presentation-image">
+                        <img src="img/GameBoy.png" alt="Mario Martin">
+                    </div>
+                    
+                    <div class="presentation-text">
+                        <h3>Sobre mí</h3>
+                        <p class="justificado">
+                           Soy estudiante de último año del grado de Diseño y Desarrollo de Videojuegos en la Universidad Rey Juan Carlos de Madrid con ganas de 
+                           convertirme en un profesional y mejorar en todos los ámbitos posibles, me desenvuelvo con facilidad en equipo y me adapto a diversos ámbitos.
+                        </p>
+                        <p class="justificado">
+                            Busco seguir desarrollando todas las aptitudes que he adquirido en todos los aspectos, desde la programación en múltiples lenguajes,
+                            diseño digital y redes sociales, desarrollo narrativo, modelado y animación de escenarios y personajes, desarrollo web, UI y UX...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="carousel-section">
+
+            <div class="carousel-container">
+
+                <div class="mySlides fade">                    
+                    <div class="slide-content">
+                        <h3 class="game-title">HISTERIA: LOS FRAGMENTOS DE LA MENTE</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">UNITY</span>
+                            <span class="tech-badge">C#</span>
+                        </div>
+                        <p class="game-desc justificado">
+                            Histeria es el mejor proyecto en el que he participado. Un roguelike renovado con niveles procedurales
+                            cuyo punto fuerte es su narrativa sobre la salud mental.
+                        </p>
+                        <a href="https://sealystudio.itch.io/histeria-fragmentos-de-la-mente" target="_blank" class="btn-play-slider">JUGAR EN ITCH.IO</a>
+                    </div>
+                    <div class="slide1-image">
+                        <img src="img/TeaserHisteria.jpg" alt="Histeria">
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide-content">
+                        <h3 class="game-title">¿CUÁL FUE MI ROL?</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">NARRATIVA</span>
+                            <span class="tech-badge">DISEÑO</span>
+                            <span class="tech-badge">PROGRAMACIÓN</span>
+                            <span class="tech-badge">RRSS</span>
+                        </div>
+                        <p class="game-desc justificado">
+                            Creando SealyStudio, desarrollé un papel de director narrativo, director audiovisual (efectos de sonido, doblaje, cinemáticas, tráilers...), 
+                            programador global y de comportamiento de personajes, ayudante de game and level design y community manager de las redes sociales.
+                        </p>
+                        <a href="https://linktr.ee/sealy.studio" target="_blank" class="btn-play-slider">LINKTREE SEALY STUDIO</a>
+                    </div>
+                    <div class="slide-video-right">
+                        <iframe 
+                            src="https://www.youtube.com/embed/L4xXSZijvUo?si=-GkZImGwH3co70cj" 
+                            title="Trailer Histeria" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </section>
+
+        <section id="projects" class="other-projects-section">
+            <div class="w3-container">
+                <h2 class="section-title">OTROS JUEGOS</h2>
+                
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/HittAndUfo.png" alt="Hitt and Ufo">
+                        </div>
+                        <div class="project-info">
+                            <h3>HITT AND UFO</h3>
+                            <p>Compite en local por la carrera de plataformas que puede salvar al planeta. Desarrollado con Spring Boot.</p>
+                            <a href="https://gg-team.itch.io/hitt-and-ufo" target="_blank" class="btn-project">JUGAR</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="display: flex; justify-content: center; align-items: center; background-color: #0a340e; height: 300px;">
+                            <img src="img/AlienRush.png" alt="Alien Rush" class="img-full-view">
+                        </div>
+                        <div class="project-info">
+                            <h3>ALIEN RUSH</h3>
+                            <p>Compite en local contra otras civilizaciones por la conquista de la sociedad. Desarrollado en Spring Boot.</p>
+                            <a href="https://gg-team.itch.io/alien-rush" target="_blank" class="btn-project">JUGAR</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="aptitudes" class="skills-tabs-section">
+            <div class="w3-container">
+                <h2 class="section-title">APTITUDES</h2>
+
+                <div class="tabs-menu">
+                    <button class="tab-link active" onclick="openSkill(event, 'Programming')">PROGRAMACIÓN</button>
+                    <button class="tab-link active" onclick="openSkill(event, 'Software')">SOFTWARE</button>
+                    <button class="tab-link" onclick="openSkill(event, 'Design')">DISEÑO GRÁFICO</button>
+                    <button class="tab-link" onclick="openSkill(event, 'Social')">REDES SOCIALES</button>
+                    <button class="tab-link" onclick="openSkill(event, 'Modeling')">MODELADO 3D</button>
+                </div>
+
+                <div id="Programming" class="tab-content" style="display: flex;">
+                    <div class="split-content left-text">
+                        <h3>LENGUAJES</h3>
+                        <p class="justificado">
+                            A lo largo de mi formación universitaria he desarrollado múltiples trabajos y juegos en diversos lenguajes.
+                            Como desarrollador de videojuegos he trabajado en todos los ámbitos de programación, programación de mecánicas, interfaces, dinámicas...
+                            Tengo una base sólida en programación orientada a objetos y patrones de diseño de videojuegos.
+                        </p>
+                    </div>
+
+                    <div class="split-content right-visual" style="display: flex; flex-direction: column; gap: 20px;">
+                        
+                        <div>
+                            <h4 class="skill-subtitle">MÁS USADOS</h4>
+                            <div class="badges-grid-container" style="justify-content: flex-start;">
+                                <span class="skill-badge">C# (UNITY)</span>
+                                <span class="skill-badge">HTML5</span>
+                                <span class="skill-badge">CSS3</span>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="skill-subtitle">MENOS USADOS</h4>
+                            <div class="badges-grid-container" style="justify-content: flex-start;">
+                                <span class="skill-badge">PYTHON</span>
+                                <span class="skill-badge">C++</span>
+                                <span class="skill-badge">JAVASCRIPT</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">JAVA</span>
+                                <span class="skill-badge">XML</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="Software" class="tab-content" style="display: none; flex-direction: column; align-items: center; text-align: center;">
+    
+                    <div class="software-section-block">
+                        <h3>HERRAMIENTAS PRINCIPALES</h3>
+                        <p>
+                            Programas que manejo con fluidez y en los que he desarrollado varios proyectos.
+                        </p>
+                        
+                        <div class="software-grid">
+                            <img src="img/Photoshop.png" alt="Git" class="software-icon">
+                            <img src="img/Unity.png" alt="Git" class="software-icon">
+                            <img src="img/VSC.png" alt="Git" class="software-icon">
+                            <img src="img/VSS.png" alt="Git" class="software-icon">
+                            <img src="img/3DMAX.png" alt="Unity" class="software-icon">
+                            <img src="img/Canva.png" alt="Unreal" class="software-icon">
+                            <img src="img/Clipchamp.png" alt="Visual Studio" class="software-icon">
+                            <img src="img/GitHub.png" alt="Git" class="software-icon">
+                            <img src="img/Figma.png" alt="Photoshop" class="software-icon">
+                            <img src="img/OBS.png" alt="Git" class="software-icon">
+                            <img src="img/PowerPoint.png" alt="Git" class="software-icon">
+                            <img src="img/SketchUp.png" alt="Git" class="software-icon">
+                            <img src="img/Word.png" alt="Git" class="software-icon">
+                        </div>
+                    </div>
+
+                    <div style="width: 50%; height: 2px; background: #333; margin: 40px 0;"></div>
+
+                    <div class="software-section-block">
+                        <h3>HERRAMIENTAS ADICIONALES</h3>
+                        <p>
+                            Herramientas que entiendo y he usado alguna vez.
+                        </p>
+                        
+                        <div class="software-grid">
+                            <img src="img/AndroidStudio.png" alt="Premiere" class="software-icon">
+                            <img src="img/Animate.png" alt="Blender" class="software-icon">
+                            <img src="img/Atlassian.png" alt="Office" class="software-icon">
+                            <img src="img/Audacity.png" alt="Trello" class="software-icon">
+                            <img src="img/Blender.png" alt="Trello" class="software-icon">
+                            <img src="img/Excel.png" alt="Trello" class="software-icon">
+                            <img src="img/Illustrator.png" alt="Trello" class="software-icon">
+                            <img src="img/Jira.png" alt="Trello" class="software-icon">
+                            <img src="img/Matlab.png" alt="Trello" class="software-icon">
+                            <img src="img/Miro.png" alt="Trello" class="software-icon">
+                            <img src="img/MongoDB.png" alt="Trello" class="software-icon">
+                            <img src="img/PyCharm.png" alt="Trello" class="software-icon">
+                            <img src="img/Spring.png" alt="Trello" class="software-icon">
+                            <img src="img/Trello.png" alt="Trello" class="software-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Design" class="tab-content" style="display: none; flex-direction: column;">
+                    <div id="design-main-menu" style="display: flex; width: 100%; gap: 50px;">
+                        <div class="split-content left-text">
+                            <h3>ARTE Y DISEÑO 2D</h3>
+                            <p class="justificado">
+                                Además de programador, me he desarrollado académica e individualmente como diseñador, siendo capaz de crear una identidad visual
+                                a empresas, estudios o videojuegos y estando muy actualizado en la gestión y publicaciones de las redes sociales. Soy capaz de
+                                crear logos, publicaciones de redes, banners, cinemáticas, tráilers o los fondos y banner de este mismo portoflio.
+                            </p>
+                        </div>
+
+                        <div class="split-content right-visual gallery-grid">
+                            
+                            <div class="gallery-category-card" onclick="openSubGallery('Gallery-Caratulas')">
+                                <img src="img/AshesOfTheDragonHunterCaratula.jpg" alt="Carátulas"> <div class="category-overlay">
+                                    <span>CARÁTULAS E ILUSTRACIONES</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-category-card" onclick="openSubGallery('Gallery-SocialDesign')">
+                                <img src="img/SealyStudioLogo2.png" alt="Redes Sociales">
+                                <div class="category-overlay">
+                                    <span>LOGOS Y BRANDING</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-category-card" onclick="openSubGallery('Gallery-UI')">
+                                <img src="img/DBUI1.png" alt="Interfaces UI">
+                                <div class="category-overlay">
+                                    <span>INTERFACES (UI)</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-category-card" onclick="openSubGallery('Gallery-Logos')">
+                                <img src="img/Banner.jpg" alt="Logos">
+                                <div class="category-overlay">
+                                    <span>OTROS</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="Gallery-Caratulas" class="sub-gallery-container" style="display: none;">
+                        <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
+                        <h3 class="gallery-heading">CARÁTULAS E ILUSTRACIONES</h3>
+                        <div class="full-gallery-grid">
+                            <img src="img/AshesOfTheDragonHunterCaratula.jpg" alt="Cover 3" onclick="openFullImage(this)">
+                            <img src="img/DuniaKorupCaratula.png" alt="Cover 2" onclick="openFullImage(this)">
+                            <img src="img/DuniaKorupCaratulaStandard.png" alt="Cover 3" onclick="openFullImage(this)">
+                            <img src="img/WhisperOfShadowsCaratula.jpg" alt="Cover 3" onclick="openFullImage(this)">
+                            <img src="img/InazumaElevenDanielCaratula.png" alt="Cover 3" onclick="openFullImage(this)">
+                            <img src="img/EuroTruckCaratula.jpg" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/HisteriaTeaserPresentacion.png" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/IWBanner1.png" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/IWBanner2.png" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/IWPubli.png" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/HisteriaTeaser2.png" alt="Cover 1" onclick="openFullImage(this)">
+                        </div>
+                    </div>
+
+                    <div id="Gallery-SocialDesign" class="sub-gallery-container" style="display: none;">
+                        <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
+                        <h3 class="gallery-heading">LOGOS & BRANDING</h3>
+                        <div class="full-gallery-grid">
+                            <img src="img/KingGameStudio.jpg" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/SealyStudioLogo2.png" alt="Post 1" onclick="openFullImage(this)">
+                            <img src="img/SealyStudioLogoLetras.png" alt="Post 2" onclick="openFullImage(this)">
+                            <img src="img/GGTeamLogo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/GatitasLogo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HisteriaLogo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/LearningShockFin.jpg" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularLogo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionLogo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/NottinghamMiedoLogo.jpg" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/InazumaElevenDanielLogo (1).png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWLogoFinal.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWLogoNegro.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWLogoRelieve.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfo.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/AlienRush.png" alt="Banner" onclick="openFullImage(this)">
+                        </div>
+                    </div>
+
+                    <div id="Gallery-UI" class="sub-gallery-container" style="display: none;">
+                        <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
+                        <h3 class="gallery-heading">UI & ASSETS</h3>
+                        <div class="full-gallery-grid">
+                            <img src="img/HittAndUfoUI1.jpg" alt="UI Menu" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoUI2.jpg" alt="UI HUD" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoUI3.jpg" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoBoton.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoBoton2.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/DBUI1.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/DBUI2.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/DBHUD.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionInventario.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionMenu.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularMuerte.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton1.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton2.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton3.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBotones.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/GemaDelBien.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/GemaDelMal.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaBronce.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaOro.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaPlata.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaPlatino.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/LearningShockFin.jpg" alt="Banner" onclick="openFullImage(this)">
+
+                        </div>
+                    </div>
+
+                    <div id="Gallery-Logos" class="sub-gallery-container" style="display: none;">
+                        <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
+                        <h3 class="gallery-heading">OTROS DISEÑOS</h3>
+                        <div class="full-gallery-grid">
+                            <img src="img/Banner.jpg" alt="Logo 1" onclick="openFullImage(this)">
+                            <img src="img/Partidazo.jpg" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/Carrasco.jpg" alt="Logo 2" onclick="openFullImage(this)">
+                            <img src="img/CartasFantasy.jpg" alt="Logo 3" onclick="openFullImage(this)">
+                            <img src="img/GBAFondo1.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/GBAFondo2.png" alt="Logo 4" onclick="openFullImage(this)">
+                            <img src="img/GameBoy.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/Zapatillas1.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/Zapatillas2.png" alt="Banner" onclick="openFullImage(this)">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="Social" class="tab-content" style="display: none;">
+                    <div class="split-content left-visual gallery-grid">
+                        <div>
+                            <a href="https://www.instagram.com/sealy.studio/" target="_blank" class="social-img-link">
+                                <img src="img/SealyStudioLogo1.png" alt="Sealy Studio Logo">
+                                    <span>Instagram Sealy Studio</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/nottmiedo_fs/" target="_blank" class="social-img-link">
+                                <img src="img/NottinghamMiedoLogo.jpg" alt="Sealy Studio Logo">
+                                    <span>Instagram Nottingham Miedo</span></div>
+                            </a>
+                        </div>
+                    <div class="split-content right-text">
+                        <h3>COMMUNITY MANAGEMENT</h3>
+                        <p class="justificado">
+                            También he participado como Community Manager en algunos proyectos, Sealy Studio y Nottingham Miedo.
+                        </p>
+                        <p class="justificado"> 
+                            Sealy Studio es un estudio indie de videojuegos creado por unos compañeros de clase y yo, donde sacamos nuestro primer gran proyecto 
+                            Histeria: Los Fragmentos de la Mente.
+                        </p>
+                        <p class="justificado">
+                            Por su parte, Nottingham Miedo consistió en un equipo de futbol ficticio del que formé parte tanto de jugador como de community manager, 
+                            es por eso que tengo una gran capacidad de adaptación a una gran variedad de proyectos así como la ilusión que se necesita para llevarlos.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="Modeling" class="tab-content" style="display: none; flex-direction: column;">
+                    <div class="full-width-text">
+                        <h3>ESCENARIO Y PERSONAJE</h3>
+                        <p class="justificado">Realicé un proyecto de modelado y animación de un escenario y un personaje basados en un mundo postapocalíptico</p>
+                    </div>
+                    <div class="full-gallery-grid">
+                        <img src="img/Edificio1.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Edificio2.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Edificio3.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Edificio4.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/EdificioCamaras.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Personaje1.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Personaje2.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Personaje3.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Arma1.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Animacion1.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Animacion2.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Animacion3.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="w3-container">
+                <h2 class="section-title">CONTACTO</h2>
+                
+                <div class="contact-container">
+                    
+                    <div class="contact-item">
+                        <div class="icon-box">
+                            <img src="img/Telefono.png" alt="Teléfono"> 
+                        </div>
+                        <div class="text-box">
+                            <h4>TELÉFONO</h4>
+                            <p>+34 674 49 18 29</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box">
+                            <img src="img/gmail.png" alt="Email">
+                        </div>
+                        <div class="text-box">
+                            <h4>EMAIL</h4>
+                            <p>martinmarioes17@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/mario-martín-escribano-4a631b289/" target="_blank" class="contact-item contact-link">
+                        <div class="icon-box">
+                            <img src="img/linkedin.png" alt="LinkedIn">
+                        </div>
+                        <div class="text-box">
+                            <h4>LINKEDIN</h4>
+                            <p>Mario Martin</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="footer-copy">
+                    <p>MARIO MARTÍN ESCRIBANO PORTFOLIO ACTUALIZADO A ENERO DE 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="imageModal" class="modal-lightbox" onclick="closeFullImage()">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                
+                slides[slideIndex-1].style.display = "block";
+            }
+
+            function openSkill(evt, skillName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tab-link");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                var currentTab = document.getElementById(skillName);
+                if(skillName === 'Modeling') {
+                    currentTab.style.display = "flex";
+                } else {
+                    currentTab.style.display = "flex";
+                }
+                
+                evt.currentTarget.className += " active";
+            }
+
+            function openSubGallery(galleryId) {
+                document.getElementById('design-main-menu').style.display = 'none';
+                var galleries = document.getElementsByClassName('sub-gallery-container');
+                for (var i = 0; i < galleries.length; i++) {
+                    galleries[i].style.display = 'none';
+                }
+                document.getElementById(galleryId).style.display = 'flex';
+            }
+
+            function closeSubGallery() {
+                var galleries = document.getElementsByClassName('sub-gallery-container');
+                for (var i = 0; i < galleries.length; i++) {
+                    galleries[i].style.display = 'none';
+                }
+                var menu = document.getElementById('design-main-menu');
+                menu.style.display = 'flex';
+            }
+
+            function openFullImage(element) {
+                var modal = document.getElementById("imageModal");
+                var modalImg = document.getElementById("img01");
+                
+                modal.style.display = "flex";
+                modal.style.alignItems = "center";
+                modal.style.justifyContent = "center";
+                
+                modalImg.src = element.src;
+            }
+
+            // Función para CERRAR el visor
+            function closeFullImage() {
+                var modal = document.getElementById("imageModal");
+                modal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
