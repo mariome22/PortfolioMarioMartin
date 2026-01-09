@@ -59,7 +59,7 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Coolvetica', sans-serif;
+    font-family: 'Brunson', sans-serif;
     align-items: center;
 }
 
@@ -140,7 +140,7 @@ body, html {
     font-size: 5rem;
     margin-bottom: 20px;
     color: #ffcc00;
-    font-family: 'Coolvetica';
+    font-family: 'Brunson';
     line-height: 1.1;
 }
 
@@ -149,7 +149,7 @@ body, html {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #ccc;
-    font-family: 'Coolvetica', sans-serif;
+    font-family: 'Nexa', sans-serif;
 }
 
 /* HISTERIA */
