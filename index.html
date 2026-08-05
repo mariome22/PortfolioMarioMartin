@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Mario Martin — Portfolio</title>
+        <title>Mario Martín — Portfolio</title>
+        <meta name="description" content="Portfolio profesional de Mario Martín, Diseñador y Desarrollador de Videojuegos. Descubre mis proyectos, diseño digital y modelado 3D." />
+        <meta name="keywords" content="Mario Martin, videojuegos, desarrollo de videojuegos, game design, Unity, programador, modelado 3D, portfolio" />
+        <meta name="author" content="Mario Martín" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mario Martín — Portfolio" />
+        <meta property="og:description" content="Portfolio profesional de Mario Martín, Diseñador y Desarrollador de Videojuegos. Proyectos, diseño digital y modelado 3D." />
+        <meta property="og:image" content="img/Banner.jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Mario Martín — Portfolio" />
+        <meta property="twitter:description" content="Portfolio profesional de Mario Martín, Diseñador y Desarrollador de Videojuegos." />
+        <meta property="twitter:image" content="img/Banner.jpg" />
+
         <link rel="icon" type="image/png" href="img/Banner.jpg" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" />
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <div class="w3-bar w3-black w3-padding w3-top w3-opacity-min nav-container">
-            <a href="img/CVMarioMartinEscribano.pdf" class="btn-cv" download>
+            <a href="img/CVMarioMartinEscribano.pdf" class="btn-cv" target="_blank">
                 DESCARGAR CV
             </a>
             <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Inicio</a>
@@ -24,7 +39,9 @@
         </div>
 
         <header id="home" class="hero-image">
-        <div class="hero-overlay"></div>
+            <div class="hero-overlay">
+                <h1 class="visually-hidden">Mario Martín — Portfolio Profesional de Diseño y Desarrollo de Videojuegos</h1>
+            </div>
         </header>
 
         <section id="info" class="presentation-section">
@@ -113,7 +130,7 @@
                     
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="img/HittAndUfo.png" alt="Hitt and Ufo">
+                            <img src="img/HittAndUfo.png" alt="Juego Hitt and Ufo" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>HITT AND UFO</h3>
@@ -124,7 +141,7 @@
 
                     <div class="project-card">
                         <div class="project-image" style="display: flex; justify-content: center; align-items: center; background-color: #0a340e; height: 300px;">
-                            <img src="img/AlienRush.png" alt="Alien Rush" class="img-full-view">
+                            <img src="img/AlienRush.png" alt="Juego Alien Rush" class="img-full-view" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>ALIEN RUSH</h3>
@@ -195,19 +212,19 @@
                         </p>
                         
                         <div class="software-grid">
-                            <img src="img/Photoshop.png" alt="Git" class="software-icon">
-                            <img src="img/Unity.png" alt="Git" class="software-icon">
-                            <img src="img/VSC.png" alt="Git" class="software-icon">
-                            <img src="img/VSS.png" alt="Git" class="software-icon">
-                            <img src="img/3DMAX.png" alt="Unity" class="software-icon">
-                            <img src="img/Canva.png" alt="Unreal" class="software-icon">
-                            <img src="img/Clipchamp.png" alt="Visual Studio" class="software-icon">
-                            <img src="img/GitHub.png" alt="Git" class="software-icon">
-                            <img src="img/Figma.png" alt="Photoshop" class="software-icon">
-                            <img src="img/OBS.png" alt="Git" class="software-icon">
-                            <img src="img/PowerPoint.png" alt="Git" class="software-icon">
-                            <img src="img/SketchUp.png" alt="Git" class="software-icon">
-                            <img src="img/Word.png" alt="Git" class="software-icon">
+                            <img src="img/Photoshop.png" alt="Adobe Photoshop" class="software-icon">
+                            <img src="img/Unity.png" alt="Unity" class="software-icon">
+                            <img src="img/VSC.png" alt="Visual Studio Code" class="software-icon">
+                            <img src="img/VSS.png" alt="Visual Studio" class="software-icon">
+                            <img src="img/3DMAX.png" alt="Autodesk 3ds Max" class="software-icon">
+                            <img src="img/Canva.png" alt="Canva" class="software-icon">
+                            <img src="img/Clipchamp.png" alt="Clipchamp" class="software-icon">
+                            <img src="img/GitHub.png" alt="GitHub" class="software-icon">
+                            <img src="img/Figma.png" alt="Figma" class="software-icon">
+                            <img src="img/OBS.png" alt="OBS Studio" class="software-icon">
+                            <img src="img/PowerPoint.png" alt="Microsoft PowerPoint" class="software-icon">
+                            <img src="img/SketchUp.png" alt="SketchUp" class="software-icon">
+                            <img src="img/Word.png" alt="Microsoft Word" class="software-icon">
                         </div>
                     </div>
 
@@ -220,19 +237,19 @@
                         </p>
                         
                         <div class="software-grid">
-                            <img src="img/AndroidStudio.png" alt="Premiere" class="software-icon">
-                            <img src="img/Animate.png" alt="Blender" class="software-icon">
-                            <img src="img/Atlassian.png" alt="Office" class="software-icon">
-                            <img src="img/Audacity.png" alt="Trello" class="software-icon">
-                            <img src="img/Blender.png" alt="Trello" class="software-icon">
-                            <img src="img/Excel.png" alt="Trello" class="software-icon">
-                            <img src="img/Illustrator.png" alt="Trello" class="software-icon">
-                            <img src="img/Jira.png" alt="Trello" class="software-icon">
-                            <img src="img/Matlab.png" alt="Trello" class="software-icon">
-                            <img src="img/Miro.png" alt="Trello" class="software-icon">
-                            <img src="img/MongoDB.png" alt="Trello" class="software-icon">
-                            <img src="img/PyCharm.png" alt="Trello" class="software-icon">
-                            <img src="img/Spring.png" alt="Trello" class="software-icon">
+                            <img src="img/AndroidStudio.png" alt="Android Studio" class="software-icon">
+                            <img src="img/Animate.png" alt="Adobe Animate" class="software-icon">
+                            <img src="img/Atlassian.png" alt="Atlassian" class="software-icon">
+                            <img src="img/Audacity.png" alt="Audacity" class="software-icon">
+                            <img src="img/Blender.png" alt="Blender" class="software-icon">
+                            <img src="img/Excel.png" alt="Microsoft Excel" class="software-icon">
+                            <img src="img/Illustrator.png" alt="Adobe Illustrator" class="software-icon">
+                            <img src="img/Jira.png" alt="Jira" class="software-icon">
+                            <img src="img/Matlab.png" alt="MATLAB" class="software-icon">
+                            <img src="img/Miro.png" alt="Miro" class="software-icon">
+                            <img src="img/MongoDB.png" alt="MongoDB" class="software-icon">
+                            <img src="img/PyCharm.png" alt="PyCharm" class="software-icon">
+                            <img src="img/Spring.png" alt="Spring Boot" class="software-icon">
                             <img src="img/Trello.png" alt="Trello" class="software-icon">
                         </div>
                     </div>
@@ -285,17 +302,17 @@
                         <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
                         <h3 class="gallery-heading">CARÁTULAS E ILUSTRACIONES</h3>
                         <div class="full-gallery-grid">
-                            <img src="img/AshesOfTheDragonHunterCaratula.jpg" alt="Cover 3" onclick="openFullImage(this)">
-                            <img src="img/DuniaKorupCaratula.png" alt="Cover 2" onclick="openFullImage(this)">
-                            <img src="img/DuniaKorupCaratulaStandard.png" alt="Cover 3" onclick="openFullImage(this)">
-                            <img src="img/WhisperOfShadowsCaratula.jpg" alt="Cover 3" onclick="openFullImage(this)">
-                            <img src="img/InazumaElevenDanielCaratula.png" alt="Cover 3" onclick="openFullImage(this)">
-                            <img src="img/EuroTruckCaratula.jpg" alt="Cover 1" onclick="openFullImage(this)">
-                            <img src="img/HisteriaTeaserPresentacion.png" alt="Cover 1" onclick="openFullImage(this)">
-                            <img src="img/IWBanner1.png" alt="Cover 1" onclick="openFullImage(this)">
-                            <img src="img/IWBanner2.png" alt="Cover 1" onclick="openFullImage(this)">
-                            <img src="img/IWPubli.png" alt="Cover 1" onclick="openFullImage(this)">
-                            <img src="img/HisteriaTeaser2.png" alt="Cover 1" onclick="openFullImage(this)">
+                            <img src="img/AshesOfTheDragonHunterCaratula.jpg" alt="Carátula - Ashes of the Dragon Hunter" onclick="openFullImage(this)">
+                            <img src="img/DuniaKorupCaratula.png" alt="Carátula - Dunia Korup (Horizontal)" onclick="openFullImage(this)">
+                            <img src="img/DuniaKorupCaratulaStandard.png" alt="Carátula - Dunia Korup (Vertical)" onclick="openFullImage(this)">
+                            <img src="img/WhisperOfShadowsCaratula.jpg" alt="Carátula - Whisper of Shadows" onclick="openFullImage(this)">
+                            <img src="img/InazumaElevenDanielCaratula.png" alt="Carátula - Inazuma Eleven Daniel" onclick="openFullImage(this)">
+                            <img src="img/EuroTruckCaratula.jpg" alt="Carátula - Euro Truck" onclick="openFullImage(this)">
+                            <img src="img/HisteriaTeaserPresentacion.png" alt="Ilustración - Histeria Teaser de Presentación" onclick="openFullImage(this)">
+                            <img src="img/IWBanner1.png" alt="Ilustración - Iron Wings Banner 1" onclick="openFullImage(this)">
+                            <img src="img/IWBanner2.png" alt="Ilustración - Iron Wings Banner 2" onclick="openFullImage(this)">
+                            <img src="img/IWPubli.png" alt="Ilustración - Iron Wings Publicidad" onclick="openFullImage(this)">
+                            <img src="img/HisteriaTeaser2.png" alt="Ilustración - Histeria Teaser 2" onclick="openFullImage(this)">
                         </div>
                     </div>
 
@@ -303,22 +320,22 @@
                         <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
                         <h3 class="gallery-heading">LOGOS & BRANDING</h3>
                         <div class="full-gallery-grid">
-                            <img src="img/KingGameStudio.jpg" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/SealyStudioLogo2.png" alt="Post 1" onclick="openFullImage(this)">
-                            <img src="img/SealyStudioLogoLetras.png" alt="Post 2" onclick="openFullImage(this)">
-                            <img src="img/GGTeamLogo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/GatitasLogo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HisteriaLogo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/LearningShockFin.jpg" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularLogo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HeymlitMansionLogo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/NottinghamMiedoLogo.jpg" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/InazumaElevenDanielLogo (1).png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWLogoFinal.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWLogoNegro.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWLogoRelieve.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HittAndUfo.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/AlienRush.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/KingGameStudio.jpg" alt="Logotipo - King Game Studio" onclick="openFullImage(this)">
+                            <img src="img/SealyStudioLogo2.png" alt="Logotipo - Sealy Studio" onclick="openFullImage(this)">
+                            <img src="img/SealyStudioLogoLetras.png" alt="Logotipo con texto - Sealy Studio" onclick="openFullImage(this)">
+                            <img src="img/GGTeamLogo.png" alt="Logotipo - GG Team" onclick="openFullImage(this)">
+                            <img src="img/GatitasLogo.png" alt="Logotipo - Gatitas" onclick="openFullImage(this)">
+                            <img src="img/HisteriaLogo.png" alt="Logotipo - Histeria" onclick="openFullImage(this)">
+                            <img src="img/LearningShockFin.jpg" alt="Ilustración de fin - Learning Shock" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularLogo.png" alt="Logotipo - Hyper Popular" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionLogo.png" alt="Logotipo - Heymlit Mansion" onclick="openFullImage(this)">
+                            <img src="img/NottinghamMiedoLogo.jpg" alt="Logotipo - Nottingham Miedo" onclick="openFullImage(this)">
+                            <img src="img/InazumaElevenDanielLogo (1).png" alt="Logotipo - Inazuma Eleven Daniel" onclick="openFullImage(this)">
+                            <img src="img/IWLogoFinal.png" alt="Logotipo final - Iron Wings" onclick="openFullImage(this)">
+                            <img src="img/IWLogoNegro.png" alt="Logotipo negro - Iron Wings" onclick="openFullImage(this)">
+                            <img src="img/IWLogoRelieve.png" alt="Logotipo con relieve - Iron Wings" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfo.png" alt="Ilustración de portada - Hitt and Ufo" onclick="openFullImage(this)">
+                            <img src="img/AlienRush.png" alt="Ilustración de portada - Alien Rush" onclick="openFullImage(this)">
                         </div>
                     </div>
 
@@ -326,29 +343,28 @@
                         <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
                         <h3 class="gallery-heading">UI & ASSETS</h3>
                         <div class="full-gallery-grid">
-                            <img src="img/HittAndUfoUI1.jpg" alt="UI Menu" onclick="openFullImage(this)">
-                            <img src="img/HittAndUfoUI2.jpg" alt="UI HUD" onclick="openFullImage(this)">
-                            <img src="img/HittAndUfoUI3.jpg" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HittAndUfoBoton.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HittAndUfoBoton2.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/DBUI1.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/DBUI2.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/DBHUD.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HeymlitMansionInventario.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HeymlitMansionMenu.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularMuerte.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularBoton1.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularBoton2.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularBoton3.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/HyperPopularBotones.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/GemaDelBien.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/GemaDelMal.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWMedallaBronce.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWMedallaOro.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWMedallaPlata.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/IWMedallaPlatino.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/LearningShockFin.jpg" alt="Banner" onclick="openFullImage(this)">
-
+                            <img src="img/HittAndUfoUI1.jpg" alt="Interfaz de Usuario - Menú Principal (Hitt and Ufo)" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoUI2.jpg" alt="Interfaz de Usuario - Pantalla de HUD (Hitt and Ufo)" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoUI3.jpg" alt="Interfaz de Usuario - Selección de Nivel (Hitt and Ufo)" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoBoton.png" alt="UI Asset - Botón Normal (Hitt and Ufo)" onclick="openFullImage(this)">
+                            <img src="img/HittAndUfoBoton2.png" alt="UI Asset - Botón de Selección (Hitt and Ufo)" onclick="openFullImage(this)">
+                            <img src="img/DBUI1.png" alt="Interfaz de Usuario - Diseño de Pantalla de Menú para DB" onclick="openFullImage(this)">
+                            <img src="img/DBUI2.png" alt="Interfaz de Usuario - Diseño de Pantalla Secundaria para DB" onclick="openFullImage(this)">
+                            <img src="img/DBHUD.png" alt="Interfaz de Usuario - HUD de Combate para DB" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionInventario.png" alt="Interfaz de Usuario - Pantalla de Inventario (Heymlit Mansion)" onclick="openFullImage(this)">
+                            <img src="img/HeymlitMansionMenu.png" alt="Interfaz de Usuario - Menú de Pausa (Heymlit Mansion)" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularMuerte.png" alt="Interfaz de Usuario - Pantalla de Game Over (Hyper Popular)" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton1.png" alt="UI Asset - Diseño de Botón 1 (Hyper Popular)" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton2.png" alt="UI Asset - Diseño de Botón 2 (Hyper Popular)" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBoton3.png" alt="UI Asset - Diseño de Botón 3 (Hyper Popular)" onclick="openFullImage(this)">
+                            <img src="img/HyperPopularBotones.png" alt="UI Assets - Conjunto de Botones de Interfaz (Hyper Popular)" onclick="openFullImage(this)">
+                            <img src="img/GemaDelBien.png" alt="Asset de Videojuego - Gema del Bien" onclick="openFullImage(this)">
+                            <img src="img/GemaDelMal.png" alt="Asset de Videojuego - Gema del Mal" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaBronce.png" alt="Asset de UI - Medalla de Bronce (Iron Wings)" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaOro.png" alt="Asset de UI - Medalla de Oro (Iron Wings)" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaPlata.png" alt="Asset de UI - Medalla de Plata (Iron Wings)" onclick="openFullImage(this)">
+                            <img src="img/IWMedallaPlatino.png" alt="Asset de UI - Medalla de Platino (Iron Wings)" onclick="openFullImage(this)">
+                            <img src="img/LearningShockFin.jpg" alt="Interfaz de Usuario - Pantalla de Fin de Juego (Learning Shock)" onclick="openFullImage(this)">
                         </div>
                     </div>
 
@@ -356,15 +372,15 @@
                         <button class="btn-back" onclick="closeSubGallery()">&#10094; VOLVER A CATEGORÍAS</button>
                         <h3 class="gallery-heading">OTROS DISEÑOS</h3>
                         <div class="full-gallery-grid">
-                            <img src="img/Banner.jpg" alt="Logo 1" onclick="openFullImage(this)">
-                            <img src="img/Partidazo.jpg" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/Carrasco.jpg" alt="Logo 2" onclick="openFullImage(this)">
-                            <img src="img/CartasFantasy.jpg" alt="Logo 3" onclick="openFullImage(this)">
-                            <img src="img/GBAFondo1.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/GBAFondo2.png" alt="Logo 4" onclick="openFullImage(this)">
-                            <img src="img/GameBoy.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/Zapatillas1.png" alt="Banner" onclick="openFullImage(this)">
-                            <img src="img/Zapatillas2.png" alt="Banner" onclick="openFullImage(this)">
+                            <img src="img/Banner.jpg" alt="Banner promocional de Mario Martín" onclick="openFullImage(this)">
+                            <img src="img/Partidazo.jpg" alt="Diseño publicitario - Partidazo de Youtubers" onclick="openFullImage(this)">
+                            <img src="img/Carrasco.jpg" alt="Ilustración publicitaria para Carrasco" onclick="openFullImage(this)">
+                            <img src="img/CartasFantasy.jpg" alt="Diseño de cartas para juego Fantasy" onclick="openFullImage(this)">
+                            <img src="img/GBAFondo1.png" alt="Fondo de pantalla estilo Game Boy Advance (Versión 1)" onclick="openFullImage(this)">
+                            <img src="img/GBAFondo2.png" alt="Fondo de pantalla estilo Game Boy Advance (Versión 2)" onclick="openFullImage(this)">
+                            <img src="img/GameBoy.png" alt="Ilustración digital de Game Boy Classic" onclick="openFullImage(this)">
+                            <img src="img/Zapatillas1.png" alt="Diseño y modelado de zapatillas - Vista Lateral" onclick="openFullImage(this)">
+                            <img src="img/Zapatillas2.png" alt="Diseño y modelado de zapatillas - Vista Frontal" onclick="openFullImage(this)">
                         </div>
                     </div>
 
@@ -374,16 +390,17 @@
                     <div class="split-content left-visual gallery-grid">
                         <div>
                             <a href="https://www.instagram.com/sealy.studio/" target="_blank" class="social-img-link">
-                                <img src="img/SealyStudioLogo1.png" alt="Sealy Studio Logo">
+                                <img src="img/SealyStudioLogo1.png" alt="Logotipo de Sealy Studio">
                                     <span class="category-overlay">Instagram Sealy Studio</span>
                             </a>
                         </div>
                         <div>
                             <a href="https://www.instagram.com/nottmiedo_fs/" target="_blank" class="social-img-link">
-                                <img src="img/NottinghamMiedoLogo.jpg" alt="Sealy Studio Logo">
-                                    <span class="category-overlay">Instagram Nottingham Miedo</span></div>
+                                <img src="img/NottinghamMiedoLogo.jpg" alt="Logotipo de Nottingham Miedo">
+                                    <span class="category-overlay">Instagram Nottingham Miedo</span>
                             </a>
                         </div>
+                    </div>
                     <div class="split-content right-text">
                         <h3>COMMUNITY MANAGEMENT</h3>
                         <p class="justificado">
@@ -406,18 +423,18 @@
                         <p class="justificado">Realicé un proyecto de modelado y animación de un escenario y un personaje basados en un mundo postapocalíptico</p>
                     </div>
                     <div class="full-gallery-grid">
-                        <img src="img/Edificio1.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Edificio2.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Edificio3.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Edificio4.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/EdificioCamaras.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Personaje1.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Personaje2.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Personaje3.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Arma1.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Animacion1.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Animacion2.png" alt="Modelo 3D" onclick="openFullImage(this)">
-                        <img src="img/Animacion3.png" alt="Modelo 3D" onclick="openFullImage(this)">
+                        <img src="img/Edificio1.png" alt="Modelo 3D - Edificio postapocalíptico Vista 1" onclick="openFullImage(this)">
+                        <img src="img/Edificio2.png" alt="Modelo 3D - Edificio postapocalíptico Vista 2" onclick="openFullImage(this)">
+                        <img src="img/Edificio3.png" alt="Modelo 3D - Edificio postapocalíptico Vista 3" onclick="openFullImage(this)">
+                        <img src="img/Edificio4.png" alt="Modelo 3D - Edificio postapocalíptico Detalles de Esquina" onclick="openFullImage(this)">
+                        <img src="img/EdificioCamaras.png" alt="Modelo 3D - Edificio postapocalíptico con Cámaras de seguridad" onclick="openFullImage(this)">
+                        <img src="img/Personaje1.png" alt="Modelo 3D - Personaje postapocalíptico Vista Frontal" onclick="openFullImage(this)">
+                        <img src="img/Personaje2.png" alt="Modelo 3D - Personaje postapocalíptico Vista Lateral" onclick="openFullImage(this)">
+                        <img src="img/Personaje3.png" alt="Modelo 3D - Personaje postapocalíptico Vista Trasera" onclick="openFullImage(this)">
+                        <img src="img/Arma1.png" alt="Modelo 3D - Arma de fuego postapocalíptica" onclick="openFullImage(this)">
+                        <img src="img/Animacion1.png" alt="Modelo 3D - Frame de Animación (Correr y Apuntar)" onclick="openFullImage(this)">
+                        <img src="img/Animacion2.png" alt="Modelo 3D - Frame de Animación (En Guardia)" onclick="openFullImage(this)">
+                        <img src="img/Animacion3.png" alt="Modelo 3D - Frame de Animación (Disparar Agachado)" onclick="openFullImage(this)">
                     </div>
                 </div>
 
@@ -500,10 +517,10 @@
                 if (n < 1) {slideIndex = slides.length}
                 
                 for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
+                    slides[i].classList.remove("active");
                 }
                 
-                slides[slideIndex-1].style.display = "block";
+                slides[slideIndex-1].classList.add("active");
             }
 
             function openSkill(evt, skillName) {
@@ -517,11 +534,7 @@
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
                 var currentTab = document.getElementById(skillName);
-                if(skillName === 'Modeling') {
-                    currentTab.style.display = "flex";
-                } else {
-                    currentTab.style.display = "flex";
-                }
+                currentTab.style.display = "flex";
                 
                 evt.currentTarget.className += " active";
             }
@@ -547,12 +560,15 @@
             function openFullImage(element) {
                 var modal = document.getElementById("imageModal");
                 var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
                 
                 modal.style.display = "flex";
+                modal.style.flexDirection = "column";
                 modal.style.alignItems = "center";
                 modal.style.justifyContent = "center";
                 
                 modalImg.src = element.src;
+                captionText.innerHTML = element.alt || "";
             }
 
             function closeFullImage() {
