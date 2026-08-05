@@ -786,9 +786,8 @@ body, html {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Barra de Navegación Estática en Móviles */
-    .nav-container {
-        position: static !important;
+    html {
+        scroll-padding-top: 110px; /* Deja espacio al hacer clic en el menú para que no tape los títulos */
     }
 
     /* Evitar justificación exagerada en móviles */
@@ -869,6 +868,23 @@ body, html {
         flex-direction: column !important;
         text-align: center;
         gap: 25px;
+    }
+    
+    /* Evitar que el menú de diseño gráfico quede aplastado en fila */
+    #design-main-menu {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* Reducir texto explicativo de Aptitudes */
+    .split-content p, #Modeling p {
+        font-size: 1rem !important;
+        line-height: 1.5;
+    }
+
+    .split-content h3, .full-width-text h3 {
+        font-size: 1.8rem !important;
+        margin-bottom: 15px;
     }
     
     /* Pestañas Desplazables Horizontalmente (Swiper) */
