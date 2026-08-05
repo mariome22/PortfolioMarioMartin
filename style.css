@@ -27,6 +27,7 @@ body, html {
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #000000; /* Fondo negro global de la página */
 }
 
 .justificado {
@@ -61,6 +62,24 @@ body, html {
     justify-content: center;
     flex-wrap: wrap;
     font-family: 'Brunson', sans-serif;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Animación suave al aparecer/desaparecer */
+    will-change: transform;
+    background-color: rgba(0, 0, 0, 0.75) !important; /* Negro semitransparente original */
+}
+
+.nav-container.nav-hidden {
+    transform: translateY(-100%); /* Oculta la barra deslizándola hacia arriba */
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -760,34 +779,68 @@ body, html {
 
 @media only screen and (max-width: 850px) {
     .nav-container {
+        display: flex !important;
         flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 5px;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 20px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .nav-toggle {
+        display: block !important;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 5px;
+        order: 2; /* Mantiene la hamburguesa a la derecha */
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        order: 3; /* El menú desplegado queda abajo del todo */
+        background-color: #000000; /* Fondo negro sólido para el dropdown móvil */
+    }
+
+    .nav-links.open {
+        display: flex !important;
     }
 
     .w3-bar .w3-bar-item {
-        font-size: 0.85rem;
-        padding: 8px 10px;
-        width: auto;
+        font-size: 1.1rem !important;
+        padding: 10px 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .w3-bar .w3-bar-item:last-child {
         border-bottom: none;
     }
 
     .btn-cv {
-        position: static;
-        transform: none;
-        display: block;
-        margin: 5px auto 10px auto;
-        width: 60%;
-        font-size: 0.9rem;
-        padding: 5px 10px;
-        text-align: center;
+        position: static !important;
+        transform: none !important;
+        display: inline-block !important;
+        margin: 0 !important;
+        width: auto !important;
+        font-size: 0.9rem !important;
+        padding: 6px 15px !important;
+        text-align: center !important;
+        order: 1; /* Mantiene el botón CV a la izquierda */
     }
 }
 
 @media only screen and (max-width: 768px) {
     html {
-        scroll-padding-top: 110px; /* Deja espacio al hacer clic en el menú para que no tape los títulos */
+        scroll-padding-top: 70px; /* Deja espacio al hacer clic en el menú para que no tape los títulos */
     }
 
     /* Evitar justificación exagerada en móviles */
@@ -803,7 +856,7 @@ body, html {
         background-size: contain !important;
         background-position: center !important;
         background-color: #0b0b0b;
-        margin-top: 110px; /* Desplaza el banner hacia abajo del menú de navegación fijo */
+        margin-top: 60px; /* Desplaza el banner hacia abajo del menú colapsado */
     }
 
     .presentation-text h3 {

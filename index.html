@@ -30,12 +30,18 @@
             <a href="img/CVMarioMartinEscribano.pdf" class="btn-cv" target="_blank">
                 DESCARGAR CV
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Inicio</a>
-            <a href="#info" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Presentación</a>
-            <a href="#games" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Histeria</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Otros proyectos</a>
-            <a href="#aptitudes" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Aptitudes</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Contacto</a>
+            <!-- Botón Hamburguesa -->
+            <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                &#9776;
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Inicio</a>
+                <a href="#info" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Presentación</a>
+                <a href="#games" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Histeria</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Otros proyectos</a>
+                <a href="#aptitudes" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Aptitudes</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Contacto</a>
+            </div>
         </div>
 
         <header id="home" class="hero-image">
@@ -575,6 +581,68 @@
                 var modal = document.getElementById("imageModal");
                 modal.style.display = "none";
             }
+
+            function toggleMenu() {
+                var links = document.getElementById("navLinks");
+                if (links.classList.contains("open")) {
+                    links.classList.remove("open");
+                } else {
+                    links.classList.add("open");
+                }
+            }
+
+            function closeMenu() {
+                var links = document.getElementById("navLinks");
+                links.classList.remove("open");
+            }
+
+            // Efecto inteligente de Scroll para la Barra de Navegación (con acumulador y detector de cambio de dirección)
+            let lastScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+            const navbar = document.querySelector(".nav-container");
+            let accumulatedScroll = 0;
+            let currentDirection = ""; // "up" o "down"
+
+            window.addEventListener("scroll", () => {
+                const currentScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+                const delta = currentScrollY - lastScrollY;
+                
+                // Evitar ruido de sub-píxeles o eventos sin movimiento real (corrige el bloqueo en ordenadores)
+                if (Math.abs(delta) < 1) return;
+                
+                // Cerrar el menú móvil si se hace scroll
+                const links = document.getElementById("navLinks");
+                if (links && links.classList.contains("open")) {
+                    links.classList.remove("open");
+                }
+
+                // Si estamos muy cerca del tope superior, siempre mostrar la barra
+                if (currentScrollY < 50) {
+                    navbar.classList.remove("nav-hidden");
+                    accumulatedScroll = 0;
+                    lastScrollY = currentScrollY;
+                    return;
+                }
+
+                // Detectar dirección del movimiento actual
+                const direction = delta > 0 ? "down" : "up";
+
+                // Si el usuario cambia la dirección del scroll, reseteamos el acumulador
+                if (direction !== currentDirection) {
+                    accumulatedScroll = 0;
+                    currentDirection = direction;
+                }
+
+                accumulatedScroll += delta;
+
+                // Solo actuamos si el movimiento acumulado en esa dirección supera un umbral cómodo (10px)
+                if (currentDirection === "down" && accumulatedScroll > 10) {
+                    navbar.classList.add("nav-hidden");
+                } else if (currentDirection === "up" && accumulatedScroll < -10) {
+                    navbar.classList.remove("nav-hidden");
+                }
+
+                lastScrollY = currentScrollY;
+            });
         </script>
     </body>
 </html>
