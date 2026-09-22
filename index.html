@@ -36,9 +36,9 @@
             </button>
             <div class="nav-links" id="navLinks">
                 <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Inicio</a>
-                <a href="#info" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Presentación</a>
-                <a href="#games" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Histeria</a>
-                <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Otros proyectos</a>
+                <a href="#info" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Sobre mí</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Proyectos</a>
+                <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Experiencia</a>
                 <a href="#aptitudes" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Aptitudes</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="closeMenu()">Contacto</a>
             </div>
@@ -74,8 +74,36 @@
             </div>
         </section>
 
-        <section id="games" class="carousel-section">
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="projects" class="projects-section-red">
+            <div class="w3-container">
+                <h2 class="section-title">PROYECTOS</h2>
 
+                <!-- 1. TFG: RESET GAME -->
+                <div class="featured-project-block red-block">
+                    <div class="featured-info">
+                        <span class="featured-badge-tag red">TRABAJO FIN DE GRADO</span>
+                        <h3 class="featured-title">RESET GAME</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">UNITY</span>
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">TFG</span>
+                        </div>
+                        <p class="featured-desc justificado">
+                            Reset Game es mi Trabajo Fin de Grado con una nota de 9 sobre 10, enfocado en crear una expereincia multigénero para todos los públicos. Reset es el fruto que nace de combinar la pasión por los videojuegos que llevo dentro, haciendo constantes
+                            referencias a juegos que marcaron mi vida con el trabajo por demostrar todos los conocimientos adquiridos durante los años de carrera.
+                        </p>
+                        <a href="https://mario-me322.itch.io/reset-game" target="_blank" class="btn-play-red">JUGAR RESET GAME</a>
+                    </div>
+                    <div class="featured-media">
+                        <img src="img/LogoReset.png" alt="Reset Game TFG">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. HISTERIA: LOS FRAGMENTOS DE LA MENTE -->
+        <section id="histeria-carousel" class="carousel-section">
             <div class="carousel-container">
 
                 <div class="mySlides fade">                    
@@ -86,8 +114,8 @@
                             <span class="tech-badge">C#</span>
                         </div>
                         <p class="game-desc justificado">
-                            Histeria es el mejor proyecto en el que he participado. Un roguelike renovado con niveles procedurales
-                            cuyo punto fuerte es su narrativa, tratando de cerca la salud mental.
+                            Histeria es el mejor proyecto universitario en el que he participado. Un roguelike renovado con niveles procedurales
+                            cuyo punto fuerte es su narrativa, tratando de cerca el difícil tema de la salud mental.
                         </p>
                         <a href="https://sealystudio.itch.io/histeria-fragmentos-de-la-mente" target="_blank" class="btn-play-slider">JUGAR EN ITCH.IO</a>
                     </div>
@@ -128,7 +156,36 @@
             </div>
         </section>
 
-        <section id="projects" class="other-projects-section">
+        <!-- 3. ARKANDROID (JUEGO MÓVIL) -->
+        <section class="projects-section-blue">
+            <div class="w3-container">
+                <div class="featured-project-block mobile-block">
+                    <div class="featured-info">
+                        <span class="featured-badge-tag blue">JUEGO MÓVIL</span>
+                        <h3 class="featured-title">ARKANDROID</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">ARKANOID</span>
+                            <span class="tech-badge">UNITY</span>
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">ANDROID</span>
+                        </div>
+                        <p class="featured-desc justificado">
+                            Publicado en Play Store, Arkandroid es mi proyecto desarrollado para dispositivos móviles. Es la innovación del clásico juego Arkanoid adaptado a dispositivos móviles,
+                            aprovechando las prestaciones de los móviles para mejorar la jugabilidad mediante giros, vibracionesy más mecánicas nuevas.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.droidmrsh.arkandroid&utm_source=emea_Med" target="_blank" class="btn-play-blue">JUGAR EN PLAY STORE</a>
+                    </div>
+                    <div class="featured-media">
+                        <div class="mobile-device-frame">
+                            <img src="img/ArkandroidGameplay2.jpeg" alt="Arkandroid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. OTROS JUEGOS -->
+        <section id="other-games" class="other-projects-section">
             <div class="w3-container">
                 <h2 class="section-title">OTROS JUEGOS</h2>
                 
@@ -156,6 +213,40 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN EXPERIENCIA Y TRAYECTORIA -->
+        <section id="experience" class="experience-section">
+            <div class="w3-container">
+                <h2 class="section-title">EXPERIENCIA</h2>
+                
+                <div class="experience-container">
+                    
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-role">MADRIJA CONSULTORÍA</h3>
+                                <div class="experience-entity">Prácticas curriculares</div>
+                                <div class="experience-entity">Departamento UX/UI</div>
+                                <div class="experience-entity">Junio 2026 - Agosto 2026</div>
+                            </div>
+                        </div>
+                        <div class="experience-body">
+                            <p class="justificado">
+                                Durante los 2 meses de mis prácticas curriculares realicé tareas de asesoría en UI/UX, participando activamente en los proyectos de diseño de la empresa.
+                                Además, desarrollé un visor 3D interactivo para la anatomía del corazón humano, optimizando varios modelos 3D en Blender de anatomía para implementarlos en la aplicación 
+                                donde poder ver y trabajar con las diferentes partes que componen el corazón.
+                            </p>
+                            <div class="tech-stack" style="margin-top: 15px;">
+                                <span class="tech-badge">UNITY</span>
+                                <span class="tech-badge">FIGMA</span>
+                                <span class="tech-badge">UX/UI</span>
+                                <span class="tech-badge">BLENDER</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -496,7 +587,7 @@
                 </div>
 
                 <div class="footer-copy">
-                    <p>MARIO MARTÍN ESCRIBANO PORTFOLIO ACTUALIZADO A ENERO DE 2026</p>
+                    <p>MARIO MARTÍN ESCRIBANO PORTFOLIO ACTUALIZADO A SEPTIEMBRE DE 2026</p>
                 </div>
             </div>
         </section>
