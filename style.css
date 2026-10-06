@@ -1360,6 +1360,22 @@ body, html {
     margin-bottom: 8px;
 }
 
+.experience-media {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-video {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 150, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    background-color: #000;
+}
+
 @media only screen and (max-width: 900px) {
     .featured-project-block {
         flex-direction: column;
